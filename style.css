@@ -1,0 +1,107 @@
+:root{
+    --red-animation-x:30s;
+    --green-animation-x:20s;
+    --orange-animation-x:10s;
+    --green-delay-x:30s;
+    --orange-delay-x:50s;    
+    --red-animation-y:30s;
+    --green-animation-y:20s;
+    --orange-animation-y:10s;
+    --red-delay-y:30s;
+    --orange-delay-y:20s;    
+}
+
+@keyframes green-light{
+    0%{
+        background-color: green;
+    }
+    99%{
+        background-color: green;
+    }
+    100%{
+        background-color: black;
+    }
+
+}
+@keyframes orange-light{
+    0%{
+        background-color: orange;
+    }
+    99%{
+        background-color: orange;
+    }
+    100%{
+        background-color: black;
+    }
+}
+@keyframes red-light{
+    0%{
+        background-color: red;
+    }
+    99%{
+        background-color: red;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+.generic-circle{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.traffic-ligth{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+}
+.red-light{
+    background-color: black;
+    animation: red-light 30s;
+    animation-direction: alternate-reverse;
+}
+.orange-light{
+    background-color: black;
+    animation: orange-light 10s;
+    animation-delay: 50s;
+    animation-direction: alternate-reverse;
+}
+.green-light{
+    background-color: black;
+    animation: green-light 20s;
+    animation-delay: 30s;
+    animation-direction: alternate-reverse;
+}
+
+.red-light-y{
+    background-color: black;
+    animation: red-light 30s;
+    animation-delay: 30s;
+    animation-direction: alternate-reverse;
+}
+.orange-light-y{
+    background-color: black;
+    animation: orange-light 10s;
+    animation-delay: 20s;
+    animation-direction: alternate-reverse;
+}
+.green-light-y{
+    background-color: black;
+    animation: green-light 20s;
+    animation-direction: alternate-reverse;
+}
+
+.traffic{
+    transform: scale(0.5);
+}
+#start{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

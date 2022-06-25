@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulation de feu tricolore</title>
+</head>
+<body>
+    <h1>Traffic Lights : </h1>
+    <div style="display:flex">
+        <div class="traffic">
+            <div class="traffic-light">
+                <div class="generic-circle red-light"></div>
+                <div class="generic-circle orange-light"></div>
+                <div class="generic-circle green-light"></div>
+            </div>
+        </div>
+    </div>
+    <div style="display: grid;grid-template-columns: repeat(3,1fr);grid-template-rows: repeat(3,1fr);gap:15px;">
+        <div id="1" style="width:200px;height: 200px;">
+
+        </div>
+        <div id="2" style="width:200px;height: 200px;">
+            <div class="traffic" style="margin:0px;">
+                <div class="traffic-light">
+                    <div class="generic-circle red-light-y"></div>
+                    <div class="generic-circle orange-light-y"></div>
+                    <div class="generic-circle green-light-y"></div>
+                </div>
+            </div>
+        </div>
+        <div id="3" style="width:200px;height: 200px;">
+
+        </div>
+        <div id="4" style="width:200px;height: 200px;">
+            <div class="traffic">
+                <div class="traffic-light">
+                    <div class="generic-circle red-light"></div>
+                    <div class="generic-circle orange-light"></div>
+                    <div class="generic-circle green-light"></div>
+                </div>
+            </div>
+        </div>
+        <div id="5" style="width:200px;height: 200px;">
+            <div style="margin:120px 50px;width: 100px;height:100px;border: 5px solid black;border-radius: 50%; display: flex; justify-content: center; flex-direction: column;">
+                <button id="start" style="margin: 5px">Commencer</button>
+            </div>
+        </div>
+        <div id="6" style="width:200px;height: 200px;">
+            <div class="traffic">
+                <div class="traffic-light">
+                    <div class="generic-circle red-light"></div>
+                    <div class="generic-circle orange-light"></div>
+                    <div class="generic-circle green-light"></div>
+                </div>
+            </div>
+        </div>
+        <div id="7" style="width:200px;height: 200px;">
+
+        </div>
+        <div id="8" style="width:200px;height: 200px;">
+            <div class="traffic" style="margin:0px;">
+                <div class="traffic-light">
+                    <div class="generic-circle red-light-y"></div>
+                    <div class="generic-circle orange-light-y"></div>
+                    <div class="generic-circle green-light-y"></div>
+                </div>
+            </div>
+        </div> 
+        <div id="9" style="width:200px;height:200px;">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
